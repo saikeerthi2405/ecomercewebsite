@@ -96,20 +96,6 @@ python manage.py runserver
 http://127.0.0.1:8000/
 ```
 
----
-
-## 📷 Screenshots
-
-Add screenshots of:
-
-- Home Page
-- Product Page
-- Cart
-- Checkout
-- Login/Register
-- Admin Panel
-
----
 
 ## 🎯 Future Enhancements
 
