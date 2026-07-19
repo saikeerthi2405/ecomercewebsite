@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ product.name }}</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+
+    <div class="row">
+
+        <div class="col-md-6 text-center">
+            <img src="{{ product.image.url }}"
+                 class="img-fluid rounded shadow"
+                 style="max-height:400px;">
+        </div>
+
+        <div class="col-md-6">
+
+            <h1>{{ product.name }}</h1>
+
+            <h3 class="text-success mt-3">
+                ₹{{ product.price }}
+            </h3>
+
+            <p class="mt-4">
+                High-quality electronic product with excellent performance and durability.
+            </p>
+
+            <a href="{% url 'add_to_cart' product.id %}"
+               class="btn btn-primary btn-lg">
+                Add to Cart
+            </a>
+
+            <a href="{% url 'home' %}"
+               class="btn btn-secondary btn-lg">
+                Back
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
